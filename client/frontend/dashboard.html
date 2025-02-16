@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - ReElectro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome<span id="userName"></span>!</h2>
+        <p>Select your device type and add the pictures</p>
+        <form action="post">
+            <label for="type">Device Type:</label>
+            <select id="type">
+                <option value="Mobile">Mobile</option>
+                <option value="Laptop">Laptop</option>
+                <option value="TV">TV</option>
+                <option value="Other">Others</option>
+            </select>
+            <br>
+            <br>
+            <label for="Pictures">Upload Pictures</label>
+            <input type="file" id="file">
+        </form>
+        <br>
+        <button id="logoutBtn">Logout</button>
+        <p id="logoutMessage" class="error"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
